@@ -1,0 +1,9 @@
+# Knowledge Base File index
+# Update this file when kb/ contents change.
+
+kb/concepts/                - Concept definitions and viriable operational
+kb/literature/theory/       - Theoretical reference (converted PDFs, not )
+kb/literature/metohds/      - Methodological references
+kb/literature/empirical/    - Key empirical studies
+kb/data-docs/               - Data source descriptions and field definition
+kb/codebooks/               - Coding schemes, category definitions, and 

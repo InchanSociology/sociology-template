@@ -6,4 +6,4 @@ kb/literature/theory/       - Theoretical reference (converted PDFs, not )
 kb/literature/metohds/      - Methodological references
 kb/literature/empirical/    - Key empirical studies
 kb/data-docs/               - Data source descriptions and field definition
-kb/codebooks/               - Coding schemes, category definitions, and 
+kb/codebooks/               - Coding schemes, category definitions

@@ -98,5 +98,23 @@ The agent MUST:
 - **Contextual Interpretation**: In `writing/`, do not just report p-values. Explain what the coefficients mean for the actual social actors or institutions (e.g., Texas high schools).
 - **Inclusion/Exclusion Logic**: Every data filtering decision must be recorded in `memory/` to ensure the research's transparency and to address potential selection bias.
 
+## Output Interpretation
+
+The agent MUST:
+
+- Interpret results using substantive meaning, not only statistical significance
+- Clearly link numerical results to the research question
+- Avoid over-interpreting small or insignificant effects
+- Report direction, magnitude, and uncertainty together
+
+
+## Assumption Control
+
+The agent MUST:
+
+- Avoid making implicit assumptions
+- Explicitly state any necessary assumptions before proceeding
+- Ask for clarification when critical information is missing
+- Provide alternative options when multiple interpretations are possible
 
 

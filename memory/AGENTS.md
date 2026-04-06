@@ -1,132 +1,97 @@
-# Knowledge Base Agent Rules (kb/)
+# Memory Agent Rules
 
 ## Purpose
 
-The `kb/` directory stores structured knowledge used for research.
+The `memory/` directory stores the evolving state of the project.
 
 This includes:
 
-- theoretical concepts
-- methodological tools
-- data documentation
-- codebooks
-- prompt templates
+- decisions made
+- assumptions
+- open questions
+- project progress
 
-The goal is to build a reusable and cumulative knowledge base.
-
----
-
-## Structure
-
-The agent MUST organize knowledge into the following subdirectories:
-
-kb/
-  concepts/
-  methods/
-  data-docs/
-  codebooks/
-  promptbooks/
+This is NOT a place for final results or knowledge storage.
 
 ---
 
-## File Creation Rules
+## Core Principle
+
+Memory is for **reasoning and traceability**, not outputs.
+
+---
+
+## Required Files
+
+The agent MUST use:
+
+- decisions.md → major decisions and reasoning
+- (optional) open_questions.md → unresolved issues
+- (optional) progress.md → project status
+
+---
+
+## Logging Rules
 
 The agent MUST:
 
-- Create a new file for each distinct concept, method, or dataset
-- Use descriptive, lowercase, hyphen-separated filenames
-- Avoid mixing multiple topics in one file
-
-Example:
-
-- social-capital.md
-- fixed-effects-model.md
-- acs-data.md
+- Record all major decisions in `decisions.md`
+- Explicitly state reasoning behind choices
+- Log assumptions when they are made
+- Update memory continuously during the project
 
 ---
 
-## Content Requirements
+## Open Questions
 
-Each knowledge file MUST include:
+The agent SHOULD:
 
-1. Definition or description  
-2. Key components or structure  
-3. When to use  
-4. Limitations  
-5. References (if applicable)  
+- Record ambiguities or uncertainties
+- Avoid silently resolving unclear issues
+- Propose possible interpretations when relevant
 
 ---
 
-## Knowledge Types
-
-### 1. concepts/
-- Sociological or theoretical ideas
-- Example: inequality, social capital, neighborhood effects
-
-### 2. methods/
-- Statistical or computational methods
-- Example: regression, matching, fixed effects
-
-### 3. data-docs/
-- Dataset-level documentation
-- Example: ACS, ECLS-K, CPS
-
-### 4. codebooks/
-- Variable-level documentation
-- Must include variable definitions and coding schemes
-
-### 5. promptbooks/
-- Reusable AI prompts for analysis or writing
-
----
-
-## Writing Style
-
-The agent MUST:
-
-- Be concise and structured
-- Avoid unnecessary narrative
-- Use bullet points when possible
-- Separate facts from interpretation
-
----
-
-## Cross-Domain Usage
-
-The agent MUST:
-
-- Use knowledge from `kb/` when interpreting results
-- Reference relevant knowledge in analysis and writing
-- Update knowledge files when new insights are gained
-
----
-
-## Update Rules
-
-The agent MUST:
-
-- Update existing files rather than duplicating similar content
-- Add new files when encountering new concepts or methods
-- Log major additions or changes in memory/decisions.md
-
----
-
-## Forbidden
+## What NOT to store
 
 The agent MUST NOT:
 
-- Store raw data here
-- Store analysis outputs here
-- Mix knowledge with memory or scripts
+- Store raw data
+- Store analysis outputs
+- Store general knowledge (use kb/ instead)
+
+---
+
+## Relationship to Other Folders
+
+- script/ → produces outputs
+- kb/ → stores general knowledge
+- writing/ → produces manuscripts
+- memory/ → tracks decisions and reasoning
 
 ---
 
 ## Final Principle
 
-The `kb/` directory is a **living knowledge system**, not a dump.
+If a decision is not recorded in memory, it did not happen.
 
-Knowledge should be:
+## Required Files Usage
 
-- reusable
-- structured
-- cumulative
+The agent MUST use:
+
+- decisions.md → record decisions and reasoning
+- open_questions.md → record ambiguities and unresolved issues
+- progress.md → track project status and next steps
+- change_log.md → track major changes
+
+---
+
+## Update Triggers
+
+The agent MUST update memory when:
+
+- a new variable is created
+- a model is specified or changed
+- a sample is restricted
+- an ambiguity is encountered
+- a major change is made

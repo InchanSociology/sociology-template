@@ -20,11 +20,8 @@ Scope: ‘writing/‘ directory tree. The root ‘AGENTS.md’ also applies.
 ## Structure and Citations (apply when appropriate)
 
 - **Paragraph structure.** Each paragraph should open with a clear topic sentence, state a claim, provide supporting evidence or mechanism, and close with a takeaway (implication, boundary condition, or transition).
-
 - **Math and notation.** State the intuition and purpose _before_ any equation. Define variables at first use, introduce notation gradually, and explain what the equation does immediately after it appears.
-
 - **Idea-first citations.** Lead with the idea or claim, then cite parenthetically with `\autocite`. Reserve `\textcite` (narrative citation) for cases where the author is genuinely the topic of the sentence (e.g., introducing a scholar for the first time, or when the author’s identity is relevant to the argument). Vary citation integration to avoid repetitive syntax.
-
 - **Pinpoint citations.** For specific arguments, definitions, method details, figures/tables, or key evidence, include pinpoint locations (page, section, figure/table number, or chapter) where possible, even when paraphrasing. Always use **journal page numbers** (not article-relative page numbers) for pinpoint references to journal articles.
 - **Reference authenticity.** Do not invent citations. Only cite references that exist in the project's `*.bib` files.
 

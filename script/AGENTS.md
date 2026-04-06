@@ -11,7 +11,7 @@ All code MUST be:
 - Modular (separable, single-responsibility scripts)
 - Non-destructive (raw data NEVER modified)
 
-## 2. 🚫 Forbidden Actions (Hard Constraints)
+## 2. Forbidden Actions (Hard Constraints)
 The agent MUST NOT:
 
 - Overwrite any file in data/raw/
@@ -22,7 +22,7 @@ The agent MUST NOT:
 
 If any of the above occurs → STOP and raise an error
 
-## 3. ✅ Required Execution Rules
+## 3. Required Execution Rules
 
 ### 3.1 Reproducibility
 The agent MUST:
